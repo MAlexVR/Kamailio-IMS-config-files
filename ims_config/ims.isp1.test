@@ -1,0 +1,33 @@
+$ORIGIN ims.isp1.test.
+$TTL 1W
+@                       1D IN SOA       localhost. root.localhost. (
+                                        1		; serial
+                                        3H              ; refresh
+                                        15M             ; retry
+                                        1W              ; expiry
+                                        1D )            ; minimum
+
+                        1D IN NS        ns
+ns                      1D IN A         192.168.1.67
+
+ims.isp1.test.       1D IN A         192.168.1.67
+ims.isp1.test.       1D IN NAPTR 10 50 "s" "SIP+D2U"      ""      _sip._udp
+ims.isp1.test.       1D IN NAPTR 20 50 "s" "SIP+D2T"      ""      _sip._tcp
+
+0.0.0.1.ims.isp1.test. IN NAPTR 5 10 "U" "E2U+sip" "!^\\+1000$!sip:alice@ims.isp1.test!".
+1.0.0.1.ims.isp1.test. IN NAPTR 5 10 "U" "E2U+sip" "!^\\+1001$!sip:bob@ims.isp1.test!".
+0.0.3.0.1.ims.isp1.test. IN NAPTR 5 10 "U" "E2U+sip" "!^\\+10300$!sip:10300@10.0.3.32!".
+
+pcscf                   1D IN A         192.168.1.67
+_sip._udp.pcscf         1D SRV 0 0 5060 pcscf
+_sip._tcp.pcscf         1D SRV 0 0 5060 pcscf
+
+icscf                   1D IN A         192.168.1.67
+_sip._udp               1D SRV 0 0 4060 icscf
+_sip._tcp               1D SRV 0 0 4060 icscf
+
+scscf                   1D IN A         192.168.1.67
+_sip._udp.scscf         1D SRV 0 0 6060 scscf
+_sip._tcp.scscf         1D SRV 0 0 6060 scscf
+
+hss                     1D IN A         192.168.1.67

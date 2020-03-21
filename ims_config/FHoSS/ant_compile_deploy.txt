@@ -1,0 +1,50 @@
+Buildfile: /opt/OpenIMSCore/FHoSS/build.xml
+
+init:
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/bin
+
+compile:
+    [javac] /opt/OpenIMSCore/FHoSS/build.xml:48: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 202 source files to /opt/OpenIMSCore/FHoSS/bin
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/main/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/sh/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/db/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/auth/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/path/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/cx/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/zh/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/web/package-info.class
+    [javac] Creating empty /opt/OpenIMSCore/FHoSS/bin/de/fhg/fokus/hss/diam/package-info.class
+
+init:
+
+compile:
+    [javac] /opt/OpenIMSCore/FHoSS/build.xml:48: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+jars:
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/bin/lib
+      [jar] Building jar: /opt/OpenIMSCore/FHoSS/bin/lib/FHoSS.jar
+
+config:
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/deploy
+     [copy] Copying 5 files to /opt/OpenIMSCore/FHoSS/deploy
+
+script:
+     [copy] Copying 3 files to /opt/OpenIMSCore/FHoSS/deploy
+
+deploy:
+     [copy] Copying 47 files to /opt/OpenIMSCore/FHoSS/deploy
+     [echo] Install the hss.web.console
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/deploy/logs
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/deploy/webapps/hss.web.console
+     [copy] Copying 133 files to /opt/OpenIMSCore/FHoSS/deploy/webapps/hss.web.console
+    [mkdir] Created dir: /opt/OpenIMSCore/FHoSS/deploy/webapps/hss.web.console/classes
+     [copy] Copying 211 files to /opt/OpenIMSCore/FHoSS/deploy/webapps/hss.web.console/WEB-INF/classes
+     [copy] Copying 1 file to /opt/OpenIMSCore/FHoSS/deploy/lib
+     [copy] Copying 28 files to /opt/OpenIMSCore/FHoSS/deploy/lib
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
